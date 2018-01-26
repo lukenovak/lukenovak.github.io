@@ -1,0 +1,81 @@
+/* the main class for the body of the webpage */
+.main {
+  background: #dddddd;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: "Gill Sans", "Helvetica", sans-serif;
+  font-weight: lighter;
+}
+
+/* the class for the navbar div */
+.navbar {
+  background: #222222;
+  position: static;
+  height: 50px;
+  color: #dddddd;
+}
+
+/* the class for the "nluken" at the top of the webpage */
+.nluken {
+  padding-top: 6px;
+  text-align: center;
+  margin: 0px;
+  vertical-align: middle;
+  font-weight: lighter;
+
+  /* so that animations will work */
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+}
+
+.nluken:hover {
+  color:red;
+
+}
+
+/* class for the picture of me */
+.picture {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  background-image: url("Photos/Me1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  border-radius: 15px;
+}
+
+/* class for the hidden div that will only be visible when you hover over
+   the picture of me */
+.transparant-hover {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+  opacity:0;
+  background: #000000;
+  /* so that animations will work */
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  color:white;
+}
+
+.transparant-hover:hover {
+  opacity: .75;
+}
+
+.hiddencontact {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: auto;
+  padding-top: 138px;
+  margin-bottom: auto;
+}
+
+.hiddencontact a {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
