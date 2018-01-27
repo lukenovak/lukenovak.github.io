@@ -1,5 +1,5 @@
 /* the main class for the body of the webpage */
-.main {
+.main-day {
   background: #dddddd;
   margin-top: 0px;
   margin-left: 0px;
@@ -8,9 +8,20 @@
   font-weight: lighter;
 }
 
+/* The main class for night mode */
+.main-night {
+  background: #111111;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: "Gill Sans", "Helvetica", sans-serif;
+  font-weight: lighter;
+}
+
 /* the class for the navbar div */
-.navbar {
-  background: #222222;
+.navbar-night {
+  background: #111111;
+  border-bottom: 5px solid #dddddd;
   position: static;
   height: 50px;
   color: #dddddd;
@@ -18,6 +29,7 @@
 
 /* the class for the "nluken" at the top of the webpage */
 .nluken {
+  color: #dddddd;
   padding-top: 6px;
   text-align: center;
   margin: 0px;
