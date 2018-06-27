@@ -2,26 +2,99 @@
 <html lang = "en">
 <head>
   <link href="nluken.css" rel="stylesheet">
+  <script src="nluken.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:400,600,800" rel="stylesheet">
 </head>
 
 <body class="main">
-  <div class="photo-bg" alt="">
-    <div class="navbar">
-      <a href="AboutMe.html" class="nb-item-link">
-        <div class="nb-item">
-          <p>About Me</p>
-        </div>
-      </a>
-      <a href="Projects.html" class="nb-item-link">
-        <div class="nb-item">
-          <p>Projects</p>
-        </div>
-      </a>
-    <div class="bigHeader">
-      <h1>Hello, adventurer!</h1>
-      <h3>You've found your way to my personal site.</h3>
+  <div class="top-bar" id="top-bar">
+    <div class="scroll-button" id="about-button">
+      <p>About Me</p>
     </div>
+    <div class="scroll-button" id="current-button">
+      <p>What's new?</p>
+    </div>
+    <div class="scroll-button" id="faq-button">
+      <p>FAQ</p>
+    </div>
+    <script> setScrollListeners()</script>
+    <div class="heading-container">
+      <h1 class="main-title">Luke Novak</h1>
+    </div>
+  </div>
+
+  <div class="photo-container main-photo" id="main-photo"></div>
+  <div class="text-container" id="main-about">
+    <div class="text-header-container">
+      <h2>About Me</h2>
+    </div>
+    <p>In case you haven't already noticed, my name is Luke. Originally from
+    northern New Jersey, I'm currently a second year Computer Science
+    major at Northeastern University in Boston. You can usually find me
+    running somewhere around the city with the Men's Track Team at NU,
+    or listening to music so that I have something to write about.</p>
+
+    <p>If you're more interested in my personal history for whatever reason,
+    feel free to get in touch.
+    There's a number of different ways you can get in contact with me, and most of them can be found on this page.</p>
+  </div>
+
+  <div class="photo-container second-photo" id="second-photo">
+  </div>
+
+  <div class="text-container" id="current-status">
+    <div class="text-header-container">
+      <h2>What am I up to now?</h2>
+    </div>
+    <p>Failing math tbqh, but also working on filling this website out
+       so it has some useful content</p>
+  </div>
+
+  <div class="photo-container third-photo" id="third-photo">
+  </div>
+
+  <div class="text-container" id="FAQ">
+    <div class="text-header-container">
+      <h2>FAQ</h2>
+    </div>
+
+    <h4>Where does nluken come from?</h4>
+    <p>Well, obviously it's based on my name, hence the "luken", but the
+      first n was something that I just liked because it made my steam
+      username more symmetrical. Unfortunately, some people have beat me
+      to the punch on some websites and it's not my username everywhere, but
+      whenever I can get it, I go with nluken</p>
+
+    <h4>I'm here for business, what can you do for me?</h4>
+    <p>That's an excellent question that I'm more to happy to answer on <a>this</a> page</p>
+
+    <h4>What kind of skills do you have?</h4>
+    <p>As far as programming goes, I've worked mostly with java, learning the design
+      principles of object oriented programming. In addition, I've done some light
+      web work with JavaScript.</p>
+    <p>Outside of programming, I dabble in graphic design and finance, especially
+      when it comes to US equity markets. I love seeing my interests in finance and
+      programming converge, so projects that involve that somehow are exceptionally
+      fun to work on.</p>
+
+    <h4>What kind of music do you listen to?</h4>
+    <p>That can be hard to answer, because it changes so much. Your best bet
+      is to follow my
+      <a href="https://open.spotify.com/user/1296647833?si=e_0BJac6Sveyeq7q96er5w">
+        Spotify account</a>
+      but I'm also planning on starting a music reviewing blog soon too, so stay
+      tuned for that.
+
+      <h4>What's with this dog motif?</h4>
+      <p>Do you have something against doooooooooooooooooogs?</p>
+
+      <h4>Q: Are we not men?</h4>
+      <p>A: We are DEVO!</p>
+  </div>
+
+  <div class="foot">
+    <a>Github</a>
+    <a>LinkedIn</a>
   </div>
 
 </body>
