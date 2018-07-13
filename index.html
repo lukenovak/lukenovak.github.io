@@ -8,23 +8,25 @@
 
 <body class="main">
   <div class="top-bar" id="top-bar">
-    <div class="scroll-button" id="about-button">
-      <p>About Me</p>
+    <div class="button-container" id="button-cont-left">
+      <div class="scroll-button" id="about-button">
+        <p>About Me</p>
+      </div>
+      <div class="scroll-button" id="current-button">
+        <p>What's new?</p>
+      </div>
     </div>
-    <div class="scroll-button" id="current-button">
-      <p>What's new?</p>
-    </div>
-    <div class="scroll-button" id="faq-button">
-      <p>FAQ</p>
-    </div>
-    <script> setScrollListeners()</script>
     <div class="heading-container">
-      <h1 class="main-title">Luke Novak</h1>
+      <h1 class="main-title" id="big-name">Luke Novak</h1>
+    </div>
+    <div class="button-container" id="button-cont-right">
+      <div class="scroll-button" id="faq-button">
+        <p>FAQ</p>
+      </div>
     </div>
   </div>
 
-  <div class="photo-container main-photo" id="main-photo">
-  </div>
+  <div class="photo-container main-photo" id="main-photo"></div>
   <div class="text-container" id="main-about">
     <div class="text-header-container">
       <h2>About Me</h2>
@@ -40,21 +42,18 @@
     There's a number of different ways you can get in contact with me, and most of them can be found on this page.</p>
   </div>
 
-  <div class="photo-container second-photo" id="second-photo">
-  </div>
+  <div class="photo-container second-photo" id="second-photo"></div>
 
   <div class="text-container" id="current-status">
     <div class="text-header-container">
       <h2>What am I up to now?</h2>
     </div>
-    <p>Right now I'm in a bit of a lull, but I am starting up work for
-    TripAdvisor in the coming weeks. As far as side projects, go, I'm
+    <p>I've just started a 6 month co-op at TripAdvisor! As far as side projects, go, I'm
     working on filling this website as well as doing some front end work for
     a project with my friends Nick Thompson and William Reed.</p>
   </div>
 
-  <div class="photo-container third-photo" id="third-photo">
-  </div>
+  <div class="photo-container third-photo" id="third-photo"></div>
 
   <div class="text-container" id="FAQ">
     <div class="text-header-container">
@@ -77,6 +76,10 @@
     <p>As far as programming goes, I've worked mostly with java, learning the design
       principles of object oriented programming. In addition, I've done some light
       web work with JavaScript.</p>
+    <p>In addition to programming skill, I am currently in an IT related co-op
+      position, being taught the ins and outs of IT. While I can't predict the
+      future, I would say that it's pretty likely that I emerge from my 6 month
+      stint at TripAdvisor with a lot of knowledge in that field</p>
     <p>Outside of programming, I dabble in graphic design and finance, especially
       when it comes to US equity markets. I love seeing my interests in finance and
       programming converge, so projects that involve that somehow are exceptionally
@@ -109,4 +112,5 @@
   </div>
 
 </body>
+<script> setScrollListeners()</script>
 </html>
