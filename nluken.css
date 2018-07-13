@@ -127,3 +127,11 @@
   color:tomato;
   cursor: pointer;
 }
+
+.wide {
+  width:60%;
+}
+
+.centered {
+  text-align: center;
+}
