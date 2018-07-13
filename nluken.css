@@ -6,7 +6,7 @@
   font-family: 'Mukta Mahee', sans-serif;
   font-weight: 600;
   background: #282828;
-  color:#d6d6d6;
+  color: #d6d6d6;
 }
 
 .top-bar {
@@ -26,6 +26,11 @@
   margin-top: 5px;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
+}
+
+.heading-container a {
+  color:inherit;
+  text-decoration: none;
 }
 
 .heading-container :hover {
@@ -120,4 +125,5 @@
 
 .scroll-button :hover {
   color:tomato;
+  cursor: pointer;
 }
