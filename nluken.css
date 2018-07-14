@@ -83,8 +83,13 @@
   background-position: 50% 70%;
 }
 
+.fourth-photo {
+  background-image: url("Photos/img4.jpg");
+  background-position: bottom left;
+}
+
 .text-container {
-  width:30%;
+  width:35%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -146,4 +151,18 @@
 
 .centered {
   text-align: center;
+}
+
+.form-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text-input {
+  font-family: 'Mukta Mahee', sans-serif;
+}
+
+.large-input {
+  width: 65%;
+  height: 150px;
 }
