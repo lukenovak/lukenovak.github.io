@@ -1,27 +1,28 @@
 function setScrollListeners() {
-  var about = document.getElementById("about-button");
-  var current = document.getElementById("current-button");
-  var faq = document.getElementById("faq-button");
-  var title = document.getElementById("big-name");
   var offset = document.getElementById("top-bar").offsetHeight;
-  about.addEventListener("click", function() {
+  document.getElementById("about-button").addEventListener("click", function() {
     window.scroll({
       top: document.getElementById("main-about").offsetTop - offset,
       behavior: "smooth"});
   });
-  current.addEventListener("click", function() {
+  document.getElementById("current-button").addEventListener("click", function() {
     window.scroll({
       top: document.getElementById("current-status").offsetTop - offset,
       behavior: "smooth"});
   });
-  faq.addEventListener("click", function() {
+  document.getElementById("faq-button").addEventListener("click", function() {
     window.scroll({
       top: document.getElementById("FAQ").offsetTop - offset,
       behavior: "smooth"});
   });
-  title.addEventListener("click", function() {
+  document.getElementById("big-name").addEventListener("click", function() {
     window.scroll({
       top: 0,
+      behavior: "smooth"});
+  });
+  document.getElementById("contact-button").addEventListener("click", function(){
+    window.scroll({
+      top: document.getElementById("contact-section").offsetTop - offset,
       behavior: "smooth"});
   });
 }
