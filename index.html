@@ -14,7 +14,7 @@
           <p>About Me</p>
         </div>
         <div class="scroll-button" id="current-button">
-          <p>What's new?</p>
+          <p>Stuff I've done</p>
         </div>
       </div>
       <div class="heading-container">
@@ -42,7 +42,6 @@
     running somewhere around the city with the Men's Track Team at NU,
     or listening to music so that I have something to write about.</p>
 
-
     <p>If you're more interested in my personal history for whatever reason,
     feel free to get in touch.
     There's a number of different ways you can get in contact with me, and most
@@ -53,9 +52,29 @@
 
   <div class="text-container" id="current-status">
     <div class="text-header-container">
-      <h2>What am I up to now?</h2>
+      <h2>Projects and other stuff I've done</h2>
     </div>
-    <p>I've just started a 6 month co-op at TripAdvisor! I will be working there
+    <h3>TickerDisplay for Reddit</h3>
+    <p>TickerDisplay is a chrome extension designed to work with the old
+      Reddit design. I frequently browse several financial-related subreddits
+      and found that I was opening a large number of tabs to check on how the
+      company a post mentioned was doing. The chrome extension uses a content
+      script to go through the page and generates a small bubble whenever a post
+      mentions a ticker symbol, it displays the current price as well as the
+      percentage or dollar change for that day, as specified by the user. Uses
+      Google's chrome extension API, as well as the IEX API to retrieve live
+      stock prices directly from the exchange. The github page for that
+      project can be found <a>here</a>
+    </p>
+    <h3>Easy Animator</h3>
+    <p>Class project for an Object Oriented Design class, the Easy Animator was
+      a java application that, when given a properly formatted text file,
+      converted the text file to an animation that could be looped, played back
+      at different speeds, and exported to an SVG animation. Utilized Java's
+      swing library for UI design. The github page for that project can be
+      found <a>here</a></p>
+    <h3>Current activities</h3>
+    <p>I just started a 6 month co-op at TripAdvisor! I will be working there
     until December, at which time I plan to return to classes at Northestern</p>
     <p>As far as side projects go, I'm working on filling this website with
     content as well as doing some front end work for a project with my friends
@@ -134,7 +153,9 @@
       <textarea class="large-input text-input"></textarea>
       </div>
       <div class="form-container">
-        <button>Send it!</button>
+        <div class="small-button" id="send-button">
+          <h5>Send it!</h5>
+        </div>
       </div>
     </form>
   </div>

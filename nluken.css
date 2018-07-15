@@ -9,6 +9,15 @@
   color: #d6d6d6;
 }
 
+.main ::selection {
+  background: #9c4535;
+}
+
+.main h3 {
+  color:tomato;
+  text-align: center;
+}
+
 .top-bar {
   width: 100%;
   background: #282828;
@@ -160,9 +169,38 @@
 
 .text-input {
   font-family: 'Mukta Mahee', sans-serif;
+  border-radius: 3px;
+  border-width: 0px;
+  background: #555555;
+  color: #d6d6d6;
+  font-weight: 600;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .large-input {
   width: 65%;
   height: 150px;
+}
+
+.small-button {
+  margin-left:auto;
+  margin-right: auto;
+  width:75px;
+  height:30px;
+  background: #d6d6d6;
+  color: #282828;
+  border-radius:3px;
+}
+
+.small-button h5 {
+  width:100%;
+  height:100%;
+  text-align: center;
+}
+
+.small-button :hover {
+  background:tomato;
+  border-radius:3px;
+  cursor:pointer;
 }
