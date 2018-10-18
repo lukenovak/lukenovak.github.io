@@ -74,12 +74,13 @@
   padding-top: 20px;
   color: black;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .main-photo {
   height:750px;
   background-image: url("Photos/MainBG.jpg");
-  background-position: 0px 1200px;
+  background-position: 0px 1300px;
 }
 
 .second-photo {
