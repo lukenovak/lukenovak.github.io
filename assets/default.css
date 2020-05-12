@@ -1,0 +1,67 @@
+body {
+    color: #DEDEDE;
+    background-color: #333333;
+    font-family: 'Mukta', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+img {
+    border: 2px solid #444444;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.small-photo {
+    max-height: 230px;
+}
+
+hr {
+    border-color: #DEDEDE;
+}
+
+h1, h2, h3, h4, h5, .serif {
+    font-family: Lora, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.black-weight {
+    font-weight: 900;
+}
+
+.hgreen {
+    color: #49796b;
+}
+
+.bg-hgreen {
+    background-color: #49796b;
+}
+
+.scadet {
+    color: #1d2951;
+}
+
+.bg-scadet {
+    background-color: #1d2951;
+}
+
+.jcarmine {
+    color: #9D2933;
+}
+
+.bg-jcarmine {
+    background-color: #9D2933;
+}
+
+.w-hover:hover {
+    background-color: #DEDEDE;
+}
+
+.top-2 {
+    top: .5rem;
+}
