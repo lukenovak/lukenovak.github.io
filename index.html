@@ -1,187 +1,89 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
 <head>
-  <link href="nluken.css" rel="stylesheet">
-  <script src="nluken.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:400,600,800" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/default.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet"> 
 </head>
 
-<body class="main">
-  <div class="top-bar" id="top-bar">
-    <div class="top-container" id="top-container">
-      <div class="button-container" id="button-cont-left">
-        <div class="scroll-button" id="about-button">
-          <p>About Me</p>
-        </div>
-        <div class="scroll-button" id="current-button">
-          <p>Stuff I've done</p>
-        </div>
-      </div>
-      <div class="heading-container">
-        <h1 class="main-title" id="big-name">Luke Novak</h1>
-      </div>
-      <div class="button-container" id="button-cont-right">
-        <div class="scroll-button" id="faq-button">
-          <p>FAQ</p>
-        </div>
-        <div class="scroll-button" id="contact-button">
-          <p>Contact</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="photo-container main-photo" id="main-photo"></div>
-  <div class="text-container" id="main-about">
-    <div class="text-header-container">
-      <h2>About Me</h2>
-    </div>
-    <p>In case you haven't already noticed, my name is Luke. Originally from
-    northern New Jersey, I'm currently a second year Computer Science
-    major at Northeastern University in Boston. You can usually find me
-    running somewhere around the city with the Men's Track Team at NU,
-    or listening to music so that I have something to write about.</p>
-
-    <p>If you're more interested in my personal history for whatever reason,
-    feel free to get in touch.
-    There's a number of different ways you can get in contact with me, and most
-    of them can be found on this page.</p>
-  </div>
-
-  <div class="photo-container second-photo" id="second-photo"></div>
-
-  <div class="text-container" id="current-status">
-    <div class="text-header-container">
-      <h2>Projects and other stuff I've done</h2>
-    </div>
-    <h3>TripLegal</h3>
-    <p>TripLegal is a web based application that was designed for the TripAdvisor
-      legal department, and is used to help manage litigation holds placed on
-      employees. The backend API is written in Python and runs off of a Flask
-      server. The application utilizes a PostgreSQL database, and the psycopg2
-      library to allow the Flask server to interact with the database. The front end
-      is written in Vanilla JS with the fetch library being used for HTTP calls. I
-      also used the Bulma CSS framework to assist with some of the design.
-    </p>
-    <h3>TickerDisplay for Reddit</h3>
-    <p>TickerDisplay is a chrome extension designed to work with the old
-      Reddit design. I frequently browse several financial-related subreddits
-      and found that I was opening a large number of tabs to check on how the
-      company a post mentioned was doing. The chrome extension uses a content
-      script to go through the page and generates a small bubble whenever a post
-      mentions a ticker symbol, it displays the current price as well as the
-      percentage or dollar change for that day, as specified by the user. Uses
-      Google's chrome extension API, as well as the IEX API to retrieve live
-      stock prices directly from the exchange. The github page for that
-      project can be found <a>here</a>
-    </p>
-    <h3>Easy Animator</h3>
-    <p>Class project for an Object Oriented Design class, the Easy Animator was
-      a java application that, when given a properly formatted text file,
-      converted the text file to an animation that could be looped, played back
-      at different speeds, and exported to an SVG animation. Utilized Java's
-      swing library for UI design. The github page for that project can be
-      found <a>here</a></p>
-    <h3>Current activities</h3>
-    <p>I'm currently in the middle of a 6 month co-op at TripAdvisor! I will be working there
-    until December, at which time I plan to return to classes at Northestern</p>
-    <p>As far as side projects go, I've got a few things up my sleeve, but they're on hold for
-      now until one of my work projects is up.
-    </p>
-  </div>
-
-  <div class="photo-container third-photo" id="third-photo"></div>
-
-  <div class="text-container" id="FAQ">
-    <div class="text-header-container">
-      <h2>FAQ</h2>
+<div id="mainContainer" class="container">
+    <div id="hiddenMenu" class="row text-center serif d-none">
+        <p id="changeGreen" class="col-4 bg-hgreen w-hover m-0">hooker's green</a>
+        <p id="changeRed" class="col-4 bg-jcarmine w-hover m-0">japanese carmine</a>
+        <p id="changeBlue" class="col-4 bg-scadet w-hover m-0">space cadet</a>
     </div>
 
-    <h4>
-
-    <h4>Where does nluken come from?</h4>
-    <p>Well, obviously it's based on my name, hence the "luken", but the
-      first n was something that I just liked because it made my steam
-      username more symmetrical. Unfortunately, some people have beat me
-      to the punch on some websites and it's not my username everywhere, but
-      whenever I can get it, I go with nluken</p>
-
-    <h4>I'm here for business, what can you do for me?</h4>
-    <p>That's an excellent question that I'm more to happy to answer on
-      <a href="Resume.html">this</a>
-      page</p>
-
-    <h4>What kind of skills do you have?</h4>
-    <p>As far as programming goes, I've worked mostly with java, learning the design
-      principles of object oriented programming. In addition, I've done some light
-      web work with JavaScript.</p>
-    <p>In addition to programming skill, I am currently in an IT related co-op
-      position, being taught the ins and outs of IT. While I can't predict the
-      future, I would say that it's pretty likely that I emerge from my 6 month
-      stint at TripAdvisor with a lot of knowledge in that field</p>
-    <p>Outside of programming, I dabble in graphic design and finance, especially
-      when it comes to US equity markets. I love seeing my interests in finance and
-      programming converge, so projects that involve that somehow are exceptionally
-      fun to work on.</p>
-
-    <h4>What kind of music do you listen to?</h4>
-    <p>That can be hard to answer, because it changes so much. Your best bet
-      is to follow my
-      <a href="https://open.spotify.com/user/1296647833?si=e_0BJac6Sveyeq7q96er5w">
-        Spotify account</a>
-      but I'm also planning on starting a music reviewing blog soon too, so stay
-      tuned for that.
-
-      <h4>What's with this dog motif?</h4>
-      <p>Do you have something against doooooooooooooooooogs?</p>
-
-      <h4>Q: Are we not men?</h4>
-      <p>A: We are DEVO!</p>
-  </div>
-
-  <div class="photo-container fourth-photo" id="fourth-photo"></div>
-
-  <div class="text-container" id="contact-section">
-    <div class="text-header-container">
-      <h2>Let's get in touch!</h2>
-    </div>
-    <p>If you want to get in touch, feel free to shoot me an email at
-      <a href="mailto:contact@nluken.com">contact@nluken.com</a>
-      or alternatively use the form below, which will do the same thing.</p>
-    <form id="user-info">
-      <div class="form-container">
-        <label>Your name:</label><br>
-        <input type="text" class="text-input"></input>
-      </div>
-      <div class="form-container">
-        <label>Your email:</label><br>
-        <input type="email" class="text-input"></input>
-      </div>
-      <div class="form-container">
-      <label>What's up?</label><br>
-      <textarea class="large-input text-input"></textarea>
-      </div>
-      <div class="form-container">
-        <div class="small-button" id="send-button">
-          <h5>Send it!</h5>
+    <header id="mainHeader" class="py-3 row align-items-end text-center serif">
+        <div class="col-3 col-md-2">
+            <a href="https://www.twitter.com/lukenov">twitter</a>
         </div>
-      </div>
-    </form>
-  </div>
+        <div class="col-2 d-md-block d-none">
+            <a href="https://www.linkedin.com/in/nluken">linkedin</a>
+        </div>
+        <div id="myName" class="col-md-4 col-6">
+            <h1 class="d-md-block d-none black-weight m-0">luke novak</h1>
+            <h2 class="black-weight d-md-none m-0">luke novak</h2>
+        </div>
+        <div class="col-3 col-md-2">
+            <a href="https://www.github.com/lukenovak">github</a>
+        </div>
+        <div class="col-2 d-md-flex d-none">
+            <div class="d-md-block d-none position-relative top-2">
+                <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:1296647833&size=basic&theme=light" width="200" height="27" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+            </div>
+        </div>
+    </header>
+
+    <hr class="mt-0 mb-3">
+
+    <div id="photoContainer" class="row">
+        <div class="col-6 col-md-4 text-center">
+            <img class="w-100" src="assets/Photos/me.jpg"/>
+            <label>me looking away from the camera</label>
+        </div>
+        <div class="col-6 col-md-4 text-center">
+            <img class="w-100" src="assets/Photos/8.jpg"/>
+            <label>me standing in front of my car a few years ago</label>
+        </div>
+        <div class="col-md-4 d-none d-md-block text-center">
+            <div class="overflow-hidden">
+                <img class="w-100" src="assets/Photos/IMG_7235.JPG"/>
+            </div>
+            <label>me doing my radio show on boston's 104.9 wrbb</label>
+        </div>
+    </div>
+    <div id="mainText" class="row justify-content-center">
+        <div class="text-center col-md-11 col-lg-8 bg-hgreen mt-2 p-3">
+            <h3 class="mb-1">welcome to my site</h3>
+            <h6 class="serif mt-0 mb-3">(it's still a work in progress)</h6>
+            <div class="row m-0 justify-content-center">
+                <p class="text-left">hello. if you're here, that means that you wanted to learn more about me. you already know my name, since it's at the top of the page. i am currently a student at northeastern university in boston, ma and an incoming software engineering co-op at apple. at northeastern, i run, code, and play music on the radio. occasionally those things intersect. depending on when you visit you might be able to find some project work here, but i'm still in the process of adding that so be a bit patient and it will be up soon enough</p>
+            </div>
+            <h5>places you might know me from:</h5>
+            <div class="ml-3 mb-3 text-left">
+                <li>northeastern university: i have attended the school since september of 2016.</li>
+                <li>tripadvisor: i worked here for about a year, from july to december of 2018 and 2019.</li>
+                <li>running: i have been running competitively for a pretty long time</li>
+            </div>
+
+            <h5>i have a question/i need to know more about you/i wanna work with you</h5>        
+            <div class="text-left">
+                <p>if any of these three things are true, let's talk. email me at <a class="w-hover" href="mailto:contact@nluken.com">contact@nluken.com</a></p>
+            </div>
+
+            <h5>a note</h5>
+            <p>my site is still being worked on at the moment, so expect some rough edges and such for the forseeable future. right now figuring out a way to display my project work.</p>
+        </div>
+    </div>
+</div>
 
 
-  <div class="foot">
-    <p>You can find me on these other websites too:</p>
-    <a href="https://github.com/lukenovak">Github</a>
-    <a href="https://www.linkedin.com/in/nluken/">LinkedIn</a>
-    <a href="https://www.facebook.com/nluken22">Facebook</a>
-    <a href="https://open.spotify.com/user/1296647833?si=e_0BJac6Sveyeq7q96er5w">
-      Spotify</a>
-    <a href="https://twitter.com/lukenov">Twitter</a>
-    <a href="https://www.instagram.com/lukenovak/">Instagram</a>
-  </div>
+<footer class="text-center position-relative fixed-bottom">
+    <p class="mt-3 mb-0">all of this is copyrighted as of 2020, luke novak</p>
+</footer>
 
-</body>
-<script> setScrollListeners()</script>
+<script src="./assets/colors.js"></script>
 </html>
