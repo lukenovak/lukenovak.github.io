@@ -3,6 +3,9 @@ const baseColor = "#DEDEDE";
 const hookersGreen = "#49796b";
 const japaneseCarmine = "#9D2933";
 const spaceCadet = "#1d2951";
+const airSupBlue = "#78A1BB"
+const prussianBlue = "#1C3144"
+const baseBackground = "#333333";
 const mainNameId = "myName";
 const colorMenuId = "hiddenMenu";
 const headerId = "mainHeader";
@@ -30,6 +33,14 @@ function changeColor(color) {
         thisLink.addEventListener("mouseover", function(){links[i].style.color = color});
     }
     currentColor = color;
+}
+
+function changeBG(color) {
+    document.getElementsByTagName("body")[0].style.backgroundColor = color;
+}
+
+function changeText(color) {
+    document.getElementsByTagName("body")[0].style.color = color;
 }
 
 function closeDropdown() {
@@ -69,8 +80,9 @@ for (let i = 0; i < links.length; i++) {
 // add the color change listeners
 document.getElementById("changeGreen").addEventListener("click", function(){
     changeColor(hookersGreen);
+    changeBG(baseBackground);
 })
 
-document.getElementById("changeRed").addEventListener("click", function(){changeColor(japaneseCarmine)})
+document.getElementById("changeRed").addEventListener("click", function(){changeColor(japaneseCarmine); changeBG(prussianBlue)})
 
-document.getElementById("changeBlue").addEventListener("click", function(){changeColor(spaceCadet)})
+document.getElementById("changeBlue").addEventListener("click", function(){changeColor(spaceCadet); changeBG("#8B786D")})
