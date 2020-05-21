@@ -1,0 +1,172 @@
+body {
+    overflow: hidden;
+    height: 100%;
+    font-family: monospace;
+    color:gray;
+}
+
+header p {
+    font-size: 0.75rem;
+}
+
+.big-letters {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 10rem;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 4px 4px #f0f0f0;
+}
+
+.small-letters {
+    font-family: Mukta, Helvetica, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    color:black;
+    text-shadow: 2px 2px #f0f0f0;
+}
+
+.rotate-right {
+    transform: rotate(30deg);
+}
+
+.rotate-left {
+    transform: rotate(330deg);
+}
+
+.circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.spin-cw {
+    animation: spin-cw 0.25s 0s 1 ease-out;
+}
+
+.base-cutout {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+}   
+
+.cutout-img-1 {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.cutout-img-2 {
+    position: absolute;
+    top: 35%;
+    left: 37%;
+}
+
+.cutout-img-3 {
+    position: absolute;
+    top: 40%;
+    left: 39%;
+}
+
+.cutout-img-4 {
+    position: absolute;
+    top: 45%;
+    left: 42%;
+}
+
+.title {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.outer-border {
+    padding: 1rem;
+    border: 5px solid gray;
+    border-style: dotted;
+}
+
+ /* mobile */
+ @media (max-width: 768px) {
+    .circle {
+        height: 7rem;
+        width: 7rem;
+        overflow: hidden;
+    }
+
+    .big-letters {
+        font-size: 7rem;
+        overflow: hidden;
+    }
+
+    .rotate-left {
+        transform: rotate(330deg);
+    }
+    
+    .first-letter {
+        position: absolute;
+        left: 8%;
+        top: 3%;
+    }
+    
+    .second-letter {
+        position: absolute;
+        right: 6%;
+        top: 22%;
+    }
+    
+    .third-letter {
+        position: absolute;
+        left: 2%;
+        bottom: 17%;
+    }
+
+    .fourth-letter {
+        position: absolute;
+        right: 5%;
+        bottom: 4%;
+    }
+ }
+
+ /* desktop */
+ @media only screen and (min-width: 768px) {
+    .rotate-left {
+        transform: rotate(345deg);
+    }
+    
+    .first-letter {
+        position: absolute;
+        left: 7%;
+        top: 10%;
+    }
+    
+    .second-letter {
+        position: absolute;
+        right: 10%;
+        top: 22%;
+    }
+    
+    .third-letter {
+        position: absolute;
+        left: 4%;
+        top: 57%;
+    }
+
+    .fourth-letter {
+        position: absolute;
+        right: 4%;
+        top: 75%;
+    }
+ }
+
+/* animations */
+@keyframes spin-cw {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
