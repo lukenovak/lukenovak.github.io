@@ -1,7 +1,7 @@
 body {
     overflow: hidden;
     height: 100%;
-    font-family: monospace;
+    font-family: "Courier New", Courier, monospace;
     color:gray;
 }
 
@@ -19,14 +19,22 @@ header p {
 
 .small-letters {
     font-family: Mukta, Helvetica, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bolder;
     color:black;
-    text-shadow: 2px 2px #f0f0f0;
+    text-shadow: 1.5px 1.5px #f0f0f0;
 }
 
 .rotate-right {
     transform: rotate(30deg);
+}
+
+.rotate-slight-right {
+    transform: rotate(10deg);
+}
+
+.rotate-slight-left {
+    transform: rotate(350deg);
 }
 
 .rotate-left {
@@ -130,9 +138,6 @@ header p {
 
  /* desktop */
  @media only screen and (min-width: 768px) {
-    .rotate-left {
-        transform: rotate(345deg);
-    }
     
     .first-letter {
         position: absolute;
@@ -159,6 +164,10 @@ header p {
     }
  }
 
+ .back-button::hover {
+     background-color: #f0f0f0;
+ }
+
 /* animations */
 @keyframes spin-cw {
     0% {
@@ -170,3 +179,17 @@ header p {
     }
 }
 
+@keyframes straighten-right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+/* animation classes */
+.straighten-right {
+    animation: straighten-right 0.5s 0s 1 ease-out;
+}
