@@ -11,18 +11,16 @@ header p {
 
 .big-letters {
     font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 10rem;
     font-weight: bolder;
     color: black;
     text-shadow: 4px 4px #f0f0f0;
 }
 
 .small-letters {
-    font-family: Mukta, Helvetica, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: 'News Cycle', Futura, Helvetica, sans-serif;
     font-size: 3rem;
     font-weight: bolder;
     color:black;
-    text-shadow: 1.5px 1.5px #f0f0f0;
 }
 
 .rotate-right {
@@ -47,8 +45,12 @@ header p {
     border-radius: 50%;
 }
 
-.spin-cw {
-    animation: spin-cw 0.25s 0s 1 ease-out;
+.spin-cw-right {
+    animation: spin-cw-right 0.25s 0s 1 ease-out;
+}
+
+.spin-cw-left {
+    animation: spin-cw-left 0.25s 0s 1 ease-out;
 }
 
 .base-cutout {
@@ -99,12 +101,10 @@ header p {
     .circle {
         height: 7rem;
         width: 7rem;
-        overflow: hidden;
     }
 
     .big-letters {
         font-size: 7rem;
-        overflow: hidden;
     }
 
     .rotate-left {
@@ -138,7 +138,16 @@ header p {
 
  /* desktop */
  @media only screen and (min-width: 768px) {
+
+    .circle {
+        height: 10rem;
+        width: 10rem;
+    }
     
+    .big-letters {
+        font-size: 10rem;
+    }
+
     .first-letter {
         position: absolute;
         left: 7%;
@@ -169,17 +178,28 @@ header p {
  }
 
 /* animations */
-@keyframes spin-cw {
+@keyframes spin-cw-right {
     0% {
-        transform: rotate(0);
+        transform: rotate(30deg);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(390deg);
     }
 }
 
-@keyframes straighten-right {
+/* animations */
+@keyframes spin-cw-left {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(330deg);
+    }
+}
+
+@keyframes rotate-right {
     0% {
         transform: rotate(0deg);
     }
@@ -189,7 +209,22 @@ header p {
     }
 }
 
-/* animation classes */
-.straighten-right {
-    animation: straighten-right 0.5s 0s 1 ease-out;
+@keyframes rotate-left {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
 }
+
+/* animation classes */
+.rt-right {
+    animation: rotate-right 0.5s 0s 1 ease-out;
+}
+
+.rt-left {
+    animation: rotate-left 0.5s 0s 1 ease-out;
+}
+
