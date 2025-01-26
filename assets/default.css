@@ -9,12 +9,14 @@ img {
 }
 
 a {
-    text-decoration: inherit;
+    text-decoration: underline;
     color: inherit;
 }
 
 a:hover {
     text-decoration: none;
+    color: inherit;
+    background-color: #DEDEDE;
 }
 
 .small-photo {
