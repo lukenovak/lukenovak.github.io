@@ -28,9 +28,8 @@ body {
 
 @media (max-width: 500px) {
     .content {
-        max-width: 400px;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
 
     .content p {
@@ -38,7 +37,18 @@ body {
     }
 
     .content h2 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .content {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+
+    .content p {
+        font-size: 1.25rem;
     }
 }
 
