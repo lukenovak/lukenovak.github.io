@@ -75,6 +75,7 @@ textarea {
     height: 1px;
     background-color: inherit;
     border: none;
+    caret-color: transparent;
 }
 
 textarea:focus {

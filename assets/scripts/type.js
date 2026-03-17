@@ -6,6 +6,7 @@ let incorrects = [];
 let scores = [];
 let startTime = undefined;
 let playedIntro = false;
+let playingIntro = false;
 
 const phrases = [
     "The quick brown fox jumps over the lazy dog.",
@@ -76,6 +77,7 @@ const handleNewCharacter = (c) => {
                 document.getElementById('question').innerHTML = `thanks for playing ¯\\_(ツ)_/¯`
                 document.getElementById('disclaimer').classList.remove("d-none")
                 document.getElementById('typingContainer').classList.remove('blurred-nonfocus')
+                document.getElementById('beginBox').classList.add('d-none')
                 const scoreboard = document.getElementById('scoreboard')
                 scoreboard.innerHTML = `<div><h4>Your scores:</h4></div>`;
                 for (let i = 0; i < scores.length; i++) {
@@ -107,6 +109,7 @@ document.getElementById('typingContainer').addEventListener('click', (e) => {
     document.getElementById('textarea').focus();
     const q = document.getElementById('question');
     if (!playedIntro) {
+        playingIntro = true;
         q.innerText = "hello...";
         setTimeout(() => q.innerText = "I begin every weekday with a few rounds of typing practice", 3000);
         setTimeout(() => q.innerText = "so I figured that I would whip up a quick game to see", 8000);
@@ -114,9 +117,10 @@ document.getElementById('typingContainer').addEventListener('click', (e) => {
         setTimeout(() => q.innerText = "Let's begin in... 3", 18000);
         setTimeout(() => q.innerText = "Let's begin in... 2", 19000);
         setTimeout(() => q.innerText = "Let's begin in... 1", 20000);
+        setTimeout(() => playingIntro = false)
         setTimeout(() => setUpNewPhrase(q, currPhraseIdx), 21000);
-        playedIntro = true
-    } else {
+        playedIntro = true;
+    } else if (!playingIntro) {
         setUpNewPhrase(q, currPhraseIdx)
     }
 
