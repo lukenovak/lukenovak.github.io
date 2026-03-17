@@ -1,32 +1,124 @@
+@font-face {
+    font-family: 'Karrik';
+    src: url('fonts/WOFF2/Karrik-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steps Mono';
+    src: url('fonts/mono/Steps-Mono-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steps-Mono';
+    src: url('fonts/mono/Steps-Mono-Mono.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-    color: seagreen;
-    background-image: url('photo/bg3.png');
+    color: #764643;
+    background-image: url('photo/birdpit.jpg');
     background-size:cover;
-    display: flex;
     height: 100vh;
+    font-family: 'Karrik', sans-serif;
+}
+
+p {
+    font-family: 'Steps Mono', monospace;
+}
+
+.click-here {
+    position: absolute;
+    z-index: 100;
+    border: solid;
+    padding: .5rem;
+    background: wheat;
+    margin: auto;
+    left:0;
+    right:0;
+    width: fit-content;
+}
+
+.blurred-nonfocus {
+    filter:blur(4px);
+}
+
+.blurred-nonfocus:focus-within {
+    filter:blur(0);
 }
 
 .content {
     text-align: center;
-    border: 10px solid seagreen;
     border-radius: 5px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color:lavenderblush;
-    max-width: 60%;
+    background-color: #A9AAB7;
     margin: auto;
 }
 
+.content-width {
+    min-width: 50%;
+    max-width: 50%;
+}
+
+textarea {
+    resize: none;
+    height: 1px;
+    background-color: inherit;
+    border: none;
+}
+
+textarea:focus {
+    background-color: inherit;
+    outline:none;
+    color: #00000000;
+}
+
+.wrongggg {
+    color: red;
+}
+
+.question > span {
+    padding: 0;
+    font-size: inherit;
+}
+
+.focused {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #9597ad;
+}
+
+.container:focus-within .click-here {
+    display: none;
+}
+
+.smaller {
+    font-size: smaller;
+}
+
+
 @media (max-width: 700px) {
-    .content {
+    .content-width {
         max-width: 500px;
     }
 }
 
 @media (max-width: 500px) {
-    .content {
+    .smaller {
+        font-size: x-small;
+    };
+
+    .content-width {
         max-width: 400px;
     }
 
@@ -37,7 +129,12 @@ body {
 
 
 h2 {
-    text-shadow: #ddd0d3 2px 2px;
+    text-shadow: #E2C147 2px 2px;
+}
+
+a {
+    color: #E2C147;
+    text-shadow: #764643 2px 2px;
 }
 
 /* from pixel corner website */
@@ -179,7 +276,7 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: seagreen;
+  background: #764643;
   display: block;
   pointer-events: none;
 }
@@ -192,8 +289,14 @@ p {
     font-size: 1.5rem;
 }
 
+.content-link:hover {
+    background-color: #E2C147;
+    text-shadow: #A9AAB7 2px 2px;
+    text-decoration: underline dashed;
+}
+
 .w-hover:hover {
-    background-color: #DEDEDE;
+    background-color: #764643;
 }
 
 .top-2 {
