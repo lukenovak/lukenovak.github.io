@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'Steps Mono';
+    font-family: 'Steps-Mono';
     src: url('fonts/mono/Steps-Mono-Thin.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
@@ -17,7 +17,7 @@
 @font-face {
     font-family: 'Steps-Mono';
     src: url('fonts/mono/Steps-Mono-Mono.woff2') format('woff2');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -31,7 +31,8 @@ body {
 }
 
 p {
-    font-family: 'Steps Mono', monospace;
+    font-family: 'Steps-Mono', monospace;
+    font-weight: normal;
 }
 
 .click-here {
