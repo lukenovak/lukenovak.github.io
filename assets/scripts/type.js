@@ -14,7 +14,7 @@ const phrases = [
     "The quick brown fox jumps over the lazy dog.",
     "I can really make you type whatever I want here, huh?",
     "A quixotic zygote skillfully outmaneuvers its forebearers.",
-    "My favorite color is taupe and my favoite meal raw eggshells.",
+    "My favorite color is taupe and my favorite meal raw eggshells.",
     "wow, strange picks.",
     "ANYWAY, I sent you this webpage to invite you to my birthday party.",
     "\"That sounds fun, when is it?\" I'm glad you asked, completely of your own volition!",
